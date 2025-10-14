@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Andhra Pradesh Tourism</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <span class="nav-logo">Andhra Pradesh Tourism</span>
+    <div class="nav-links">
+      <button onclick="navigate('home')">Home</button>
+      <button onclick="navigate('favourites')">Favourite Places</button>
+    </div>
+  </nav>
+  <!-- Home Section -->
+  <section id="home" class="active section">
+    <div class="hero">
+      <img src="images/ap.jpg" alt="ap tour" class="hero-bg">
+      <div class="hero-content">
+        <h1>Andhra Pradesh Tourism</h1>
+        <p>Discover ancient temples, pristine beaches, breathtaking valleys & timeless heritage.</p>
+        <button class="cta-btn" onclick="navigate('favourites')">Get Started</button>
+      </div>
+    </div>
+  </section>
+  <!-- Favourite Places Section -->
+  <section id="favourites" class="section">
+    <h2 class="section-heading">Favourite Places</h2>
+    <div class="places-grid" id="placesGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+  <!-- Detail Section -->
+  <section id="detail" class="section">
+    <button class="back-btn" onclick="navigate('favourites')">&larr; Back to Places</button>
+    <div id="detailContent"></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
